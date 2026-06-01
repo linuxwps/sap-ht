@@ -1,6 +1,6 @@
 # sap-ht
 
-使用 agent-browser 自动化查询 SAP Portal 成本类合同的 OpenClaw Skill。
+使用 agent-browser 自动化查询 SAP Portal 成本类合同的Skill。
 
 ## 功能特点
 
@@ -35,12 +35,10 @@
 
 ## 安装
 
-将本 skill 放入 OpenClaw skills 目录：
+将本 skill 放入 skills 目录（以 openclaw 举例）：
 
 ```bash
 cp -r sap-ht ~/.openclaw/skills/
-# 或
-cp -r sap-ht ~/.qclaw/skills/
 ```
 
 ## 配置
@@ -80,10 +78,10 @@ bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh <乙方名称关键字> [项目
 
 ```bash
 # 按乙方名称查询
-bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh 同庆
+bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh [公司名称关键字]
 
 # 按乙方名称 + 项目名称筛选
-bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh 同庆 叠翠峰
+bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh [公司名称关键字] [公司名称关键字]
 ```
 
 ## 输出文件
@@ -156,18 +154,9 @@ A: SAP Web Dynpro 每次登录后 input ID 都会变化。必须通过 `title` �
 
 ## 安全注意事项
 
-- ⚠️ **不要将 `oa_pwd.txt` 提交到 Git**
-- ⚠️ **不要将包含真实用户名/密码的文件分享**
+- ⚠️ 浏览器自动化对网络条件苛刻，如网络较差可能因为 timeout 时间不足而无法顺利进入下一阶段
+- ⚠️ 技能能否稳定运行与模型能力尤其上下文窗口有直接关系
 - ✅ 推荐使用环境变量 `SAP_USER` / `SAP_PASS`
-- ✅ `.gitignore` 已包含 `oa_pwd.txt`
-
-## .gitignore
-
-```
-oa_pwd.txt
-*.xlsx
-/private/tmp/sap-ht/
-```
 
 ## 许可
 
@@ -179,4 +168,4 @@ MIT License
 
 ---
 
-> 💡 本 Skill 是 OpenClaw agent 生态的一部分。欢迎提交 PR 改进！
+> 💡 本 Skill 是 OpenClaw agent 生态的一部分，可在其他 agent 按本文配置后复用。欢迎提交 PR 改进！

@@ -62,7 +62,7 @@ your_password
 
 ## 使用方法
 
-### 通过 OpenClaw等 agent 触发
+### 通过 OpenClaw 等 agent 触发
 
 对话中提及以下关键词即可触发：
 - `查合同`、`合同编号`、`ht`
@@ -158,6 +158,7 @@ A: SAP Web Dynpro 每次登录后 input ID 都会变化。必须通过 `title` �
 - ⚠️ 技能能否稳定运行与模型能力尤其上下文窗口有直接关系
 - ✅ 用户名和密码推荐使用环境变量 `SAP_USER` / `SAP_PASS`
 - ⚠️ 导出的 Excel 默认存放于（MacOS下的）~/Downloads/，用户可根据自身情况让 agent 适应调整
+- ⚠️ SAP 登录地址 http://your-sap-portal.example.com:8001/irj/portal 未初始化，用户可根据自身情况让 agent 适应调整
   
 ## 许可
 

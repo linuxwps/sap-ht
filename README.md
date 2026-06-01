@@ -78,10 +78,10 @@ bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh <乙方名称关键字> [项目
 
 ```bash
 # 按乙方名称查询
-bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh [公司名称关键字]
+bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh <乙方名称关键字> 
 
 # 按乙方名称 + 项目名称筛选
-bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh [公司名称关键字] [公司名称关键字]
+bash ~/.openclaw/skills/sap-ht/scripts/sap-ht.sh <乙方名称关键字> [项目名称关键字]
 ```
 
 ## 输出文件
@@ -152,12 +152,13 @@ A: SAP Web Dynpro 每次登录后 input ID 都会变化。必须通过 `title` �
 - [openpyxl](https://openpyxl.readthedocs.io/) — Python Excel 生成库
 - Chrome/Chromium — 被 agent-browser 控制
 
-## 安全注意事项
+## 注意事项
 
 - ⚠️ 浏览器自动化对网络条件苛刻，如网络较差可能因为 timeout 时间不足而无法顺利进入下一阶段
 - ⚠️ 技能能否稳定运行与模型能力尤其上下文窗口有直接关系
-- ✅ 推荐使用环境变量 `SAP_USER` / `SAP_PASS`
-
+- ✅ 用户名和密码推荐使用环境变量 `SAP_USER` / `SAP_PASS`
+- ⚠️ 导出的 Excel 默认存放于（MacOS下的）~/Downloads/，用户可根据自身情况让 agent 适应调整
+  
 ## 许可
 
 MIT License

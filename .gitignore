@@ -1,0 +1,21 @@
+# Credentials
+oa_pwd.txt
+
+# Excel files
+*.xlsx
+*.xls
+
+# Temp files
+/private/tmp/sap-ht/
+*.txt
+*.json
+*.js
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

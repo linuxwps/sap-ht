@@ -1,0 +1,9 @@
+# SAP Portal 登录凭据（模板）
+# 将此文件重命名为 oa_pwd.txt，第一行填用户名，第二行填密码
+# 
+# 或使用环境变量（推荐）：
+#   export SAP_USER=your_username
+#   export SAP_PASS=your_password
+
+YOUR_USERNAME_HERE
+YOUR_PASSWORD_HERE

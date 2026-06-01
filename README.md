@@ -157,8 +157,8 @@ A: SAP Web Dynpro 每次登录后 input ID 都会变化。必须通过 `title` �
 - ⚠️ 浏览器自动化对网络条件苛刻，如网络较差可能因为 timeout 时间不足而无法顺利进入下一阶段
 - ⚠️ 技能能否稳定运行与模型能力尤其上下文窗口有直接关系
 - ✅ 用户名和密码推荐使用环境变量 `SAP_USER` / `SAP_PASS`
-- ⚠️ 导出的 Excel 默认存放于（MacOS下的）~/Downloads/，用户可根据自身情况让 agent 适应调整
-- ⚠️ SAP 登录地址 http://your-sap-portal.example.com:8001/irj/portal 未初始化，用户可根据自身情况让 agent 适应调整
+- ⚠️ 导出的 Excel 默认存放于 `~/Downloads/`，用户可根据自身情况调整
+- ⚠️ SAP Portal URL 需要在 `sap-report.sh` 中配置，或通过环境变量 `SAP_PORTAL_URL` 指定
   
 ## 许可
 

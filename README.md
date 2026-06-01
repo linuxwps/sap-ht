@@ -62,7 +62,7 @@ your_password
 
 ## 使用方法
 
-### 通过 OpenClaw 触发
+### 通过 OpenClaw等 agent 触发
 
 对话中提及以下关键词即可触发：
 - `查合同`、`合同编号`、`ht`
